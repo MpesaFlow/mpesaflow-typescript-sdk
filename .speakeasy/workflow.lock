@@ -1,0 +1,42 @@
+speakeasyVersion: 1.479.0
+sources:
+    MpesaFlow API:
+        sourceNamespace: mpesa-flow-api
+        sourceRevisionDigest: sha256:98e1709814d3f6217fcd847ca892d2c7cc0de3f0c4afc5927f48192fc62ff633
+        sourceBlobDigest: sha256:cd6088d3baea5ce52b659ad8a350ece5f54da4aaaacc5eb43aa9d7f1b1b1182e
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    mpesaflow:
+        source: MpesaFlow API
+        sourceNamespace: mpesa-flow-api
+        sourceRevisionDigest: sha256:98e1709814d3f6217fcd847ca892d2c7cc0de3f0c4afc5927f48192fc62ff633
+        sourceBlobDigest: sha256:cd6088d3baea5ce52b659ad8a350ece5f54da4aaaacc5eb43aa9d7f1b1b1182e
+        codeSamplesNamespace: mpesa-flow-api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:169b2bc780fbd12d948d8819a84dbd435a5b6b81a1eb7977b96df42b5716f07f
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        MpesaFlow API:
+            inputs:
+                - location: https://api.mpesaflow.com/docs
+            overlays:
+                - location: .speakeasy\speakeasy-modifications-overlay.yaml
+            transformations:
+                - filterOperations:
+                    operations: get_/businesses/{id},patch_/businesses/{id},delete_/businesses/{id},get_/customers/{id},patch_/customers/{id},delete_/customers/{id},get_/files/{id},patch_/files/{id},delete_/files/{id},get_/payment-links/{id},patch_/payment-links/{id},delete_/payment-links/{id},get_/prices/{id},patch_/prices/{id},delete_/prices/{id},get_/products/{id},patch_/products/{id},delete_/products/{id}
+                    exclude: true
+            registry:
+                location: registry.speakeasyapi.dev/mpesaflow/sdks/mpesa-flow-api
+    targets:
+        mpesaflow:
+            target: typescript
+            source: MpesaFlow API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/mpesaflow/sdks/mpesa-flow-api-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

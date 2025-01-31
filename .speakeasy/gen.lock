@@ -1,0 +1,311 @@
+lockVersion: 2.0.0
+id: d9eb7ac5-1f12-4d12-a7a9-af6ecfaa2e2a
+management:
+  docChecksum: 7c634ee2a98b0430c8a5cf30ed569632
+  docVersion: 1.0.0
+  speakeasyVersion: 1.479.0
+  generationVersion: 2.499.0
+  releaseVersion: 0.1.1
+  configChecksum: 5a79cb6e0ffea012c65eeb26f73012b5
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    core: 3.18.20
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.12
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.4
+    groups: 2.81.2
+    nameOverrides: 2.81.2
+    nullables: 0.1.0
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.2.0
+    unions: 2.85.8
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/components/security.md
+  - docs/models/errors/errort.md
+  - docs/models/errors/getbusinessesresponsebody.md
+  - docs/models/errors/getcustomersresponsebody.md
+  - docs/models/errors/getfilesresponsebody.md
+  - docs/models/errors/getpaymentlinksresponsebody.md
+  - docs/models/errors/getpricesresponsebody.md
+  - docs/models/errors/getproductsresponsebody.md
+  - docs/models/errors/issues.md
+  - docs/models/errors/path.md
+  - docs/models/errors/postbusinessesresponsebody.md
+  - docs/models/errors/postcustomerserror.md
+  - docs/models/errors/postcustomersissues.md
+  - docs/models/errors/postcustomerspath.md
+  - docs/models/errors/postcustomersresponsebody.md
+  - docs/models/errors/postfileserror.md
+  - docs/models/errors/postfilesissues.md
+  - docs/models/errors/postfilespath.md
+  - docs/models/errors/postfilesresponsebody.md
+  - docs/models/errors/postpaymentlinkserror.md
+  - docs/models/errors/postpaymentlinksissues.md
+  - docs/models/errors/postpaymentlinkspath.md
+  - docs/models/errors/postpaymentlinksresponsebody.md
+  - docs/models/errors/postpriceserror.md
+  - docs/models/errors/postpricesissues.md
+  - docs/models/errors/postpricespath.md
+  - docs/models/errors/postpricesresponsebody.md
+  - docs/models/errors/postproductserror.md
+  - docs/models/errors/postproductsissues.md
+  - docs/models/errors/postproductspath.md
+  - docs/models/errors/postproductsresponsebody.md
+  - docs/models/operations/aftercompletion.md
+  - docs/models/operations/getbusinessesliveenvs.md
+  - docs/models/operations/getbusinessestestenvs.md
+  - docs/models/operations/getcustomersresponsebody.md
+  - docs/models/operations/getfilesresponsebody.md
+  - docs/models/operations/getpaymentlinksaftercompletion.md
+  - docs/models/operations/getpaymentlinkshostedconfirmation.md
+  - docs/models/operations/getpaymentlinksmetadata.md
+  - docs/models/operations/getpaymentlinksresponsebody.md
+  - docs/models/operations/getpaymentlinkssubmittype.md
+  - docs/models/operations/getpricesresponsebody.md
+  - docs/models/operations/getproductsmetadata.md
+  - docs/models/operations/getproductsresponsebody.md
+  - docs/models/operations/gettransactionsresponsebody.md
+  - docs/models/operations/hostedconfirmation.md
+  - docs/models/operations/liveenvs.md
+  - docs/models/operations/metadata.md
+  - docs/models/operations/mpesaresults.md
+  - docs/models/operations/postbusinessesliveenvs.md
+  - docs/models/operations/postbusinessesrequestbody.md
+  - docs/models/operations/postbusinessesresponsebody.md
+  - docs/models/operations/postbusinessestestenvs.md
+  - docs/models/operations/postcustomersrequestbody.md
+  - docs/models/operations/postcustomersresponsebody.md
+  - docs/models/operations/postfilesrequestbody.md
+  - docs/models/operations/postfilesresponsebody.md
+  - docs/models/operations/postpaymentlinksaftercompletion.md
+  - docs/models/operations/postpaymentlinkshostedconfirmation.md
+  - docs/models/operations/postpaymentlinksmetadata.md
+  - docs/models/operations/postpaymentlinksrequestbody.md
+  - docs/models/operations/postpaymentlinksresponsebody.md
+  - docs/models/operations/postpaymentlinkssubmittype.md
+  - docs/models/operations/postpricesrequestbody.md
+  - docs/models/operations/postpricesresponsebody.md
+  - docs/models/operations/postproductsmetadata.md
+  - docs/models/operations/postproductsproductsmetadata.md
+  - docs/models/operations/postproductsrequestbody.md
+  - docs/models/operations/postproductsresponsebody.md
+  - docs/models/operations/responsebody.md
+  - docs/models/operations/status.md
+  - docs/models/operations/submittype.md
+  - docs/models/operations/testenvs.md
+  - docs/models/operations/type.md
+  - docs/sdks/businesses/README.md
+  - docs/sdks/customers/README.md
+  - docs/sdks/files/README.md
+  - docs/sdks/mpesaflow/README.md
+  - docs/sdks/paymentlinks/README.md
+  - docs/sdks/prices/README.md
+  - docs/sdks/products/README.md
+  - docs/sdks/transactions/README.md
+  - eslint.config.mjs
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/businessesCreate.ts
+  - src/funcs/businessesList.ts
+  - src/funcs/customersCreate.ts
+  - src/funcs/customersList.ts
+  - src/funcs/filesCreate.ts
+  - src/funcs/filesList.ts
+  - src/funcs/paymentLinksCreate.ts
+  - src/funcs/paymentLinksList.ts
+  - src/funcs/pricesCreate.ts
+  - src/funcs/pricesList.ts
+  - src/funcs/productsCreate.ts
+  - src/funcs/productsList.ts
+  - src/funcs/transactionsList.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/models/components/index.ts
+  - src/models/components/security.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/getbusinesses.ts
+  - src/models/errors/getcustomers.ts
+  - src/models/errors/getfiles.ts
+  - src/models/errors/getpaymentlinks.ts
+  - src/models/errors/getprices.ts
+  - src/models/errors/getproducts.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/postbusinesses.ts
+  - src/models/errors/postcustomers.ts
+  - src/models/errors/postfiles.ts
+  - src/models/errors/postpaymentlinks.ts
+  - src/models/errors/postprices.ts
+  - src/models/errors/postproducts.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/operations/getbusinesses.ts
+  - src/models/operations/getcustomers.ts
+  - src/models/operations/getfiles.ts
+  - src/models/operations/getpaymentlinks.ts
+  - src/models/operations/getprices.ts
+  - src/models/operations/getproducts.ts
+  - src/models/operations/gettransactions.ts
+  - src/models/operations/index.ts
+  - src/models/operations/postbusinesses.ts
+  - src/models/operations/postcustomers.ts
+  - src/models/operations/postfiles.ts
+  - src/models/operations/postpaymentlinks.ts
+  - src/models/operations/postprices.ts
+  - src/models/operations/postproducts.ts
+  - src/sdk/businesses.ts
+  - src/sdk/customers.ts
+  - src/sdk/files.ts
+  - src/sdk/index.ts
+  - src/sdk/paymentlinks.ts
+  - src/sdk/prices.ts
+  - src/sdk/products.ts
+  - src/sdk/sdk.ts
+  - src/sdk/transactions.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  get_/businesses:
+    speakeasy-default-get-/businesses:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "user": "Rocio_Kiehn", "object": "<value>", "active": true, "created": "<value>", "livemode": false, "business_icon": "<value>", "business_logo": "<value>", "name": "<value>", "test_envs": {"pass_key": "<value>", "consumer_key": "<value>", "consumer_secret": "<value>", "business_short_code": "<value>"}, "live_envs": {"pass_key": "<value>", "consumer_key": "<value>", "consumer_secret": "<value>", "business_short_code": "<value>"}}]
+        "404":
+          application/json: {"message": "Not Found"}
+  post_/businesses:
+    speakeasy-default-post-/businesses:
+      requestBody:
+        application/json: {"name": "<value>", "test_envs": {"pass_key": "<value>", "consumer_key": "<value>", "consumer_secret": "<value>", "business_short_code": "<value>"}, "live_envs": {"pass_key": "<value>", "consumer_key": "<value>", "consumer_secret": "<value>", "business_short_code": "<value>"}}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "user": "Dangelo53", "object": "<value>", "active": true, "created": "<value>", "livemode": true, "business_icon": "<value>", "business_logo": "<value>", "name": "<value>", "test_envs": {"pass_key": "<value>", "consumer_key": "<value>", "consumer_secret": "<value>", "business_short_code": "<value>"}, "live_envs": {"pass_key": "<value>", "consumer_key": "<value>", "consumer_secret": "<value>", "business_short_code": "<value>"}}
+        "422":
+          application/json: {"success": false, "error": {"issues": [{"code": "invalid_type", "path": ["name"], "message": "Required"}, {"code": "invalid_type", "path": ["test_envs"], "message": "Required"}, {"code": "invalid_type", "path": ["live_envs"], "message": "Required"}], "name": "ZodError"}}
+  get_/customers:
+    speakeasy-default-get-/customers:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "business": "<value>", "user": "Effie_Kozey47", "balance": "<value>", "object": "<value>", "created": "<value>", "livemode": true, "phone_number": "(538) 318-7688 x598", "currency": "Serbian Dinar", "email": "Jimmy44@gmail.com", "updated": "<value>"}, {"id": "<id>", "business": "<value>", "user": "Priscilla46", "balance": "<value>", "object": "<value>", "created": "<value>", "livemode": false, "phone_number": "351.254.9216 x98287", "currency": "Netherlands Antillian Guilder", "email": "Eulah_Dach83@gmail.com", "updated": "<value>"}]
+        "404":
+          application/json: {"message": "Not Found"}
+  post_/customers:
+    speakeasy-default-post-/customers:
+      requestBody:
+        application/json: {"phone_number": "546.713.6633 x2439"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "business": "<value>", "user": "Cleveland.Yost56", "balance": "<value>", "object": "<value>", "created": "<value>", "livemode": false, "phone_number": "(745) 809-5176 x9290", "currency": "Uzbekistan Sum", "email": "Lynn95@gmail.com", "updated": "<value>"}
+        "422":
+          application/json: {"success": false, "error": {"issues": [{"code": "invalid_type", "path": ["phone_number"], "message": "Required"}], "name": "ZodError"}}
+  get_/files:
+    speakeasy-default-get-/files:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "business": "<value>", "user": "Seth_Heidenreich", "object": "<value>", "created": "<value>", "expires_at": "1769741105032", "filename": "example.file", "livemode": false, "purpose": "<value>", "title": "<value>", "size": "<value>", "type": "<value>", "url": "https://aching-cook.org/", "updated": "<value>"}]
+        "404":
+          application/json: {"message": "Not Found"}
+  post_/files:
+    speakeasy-default-post-/files:
+      requestBody:
+        application/json: {"expires_at": "1741097688610", "filename": "example.file", "purpose": "<value>", "size": "<value>", "type": "<value>", "url": "https://granular-hornet.biz/"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "business": "<value>", "user": "Norene52", "object": "<value>", "created": "<value>", "expires_at": "1738468900086", "filename": "example.file", "livemode": false, "purpose": "<value>", "title": "<value>", "size": "<value>", "type": "<value>", "url": "https://responsible-airline.net", "updated": "<value>"}
+        "422":
+          application/json: {"success": false, "error": {"issues": [{"code": "invalid_type", "path": ["expires_at"], "message": "Required"}, {"code": "invalid_type", "path": ["filename"], "message": "Required"}, {"code": "invalid_type", "path": ["purpose"], "message": "Required"}, {"code": "invalid_type", "path": ["size"], "message": "Required"}, {"code": "invalid_type", "path": ["type"], "message": "Required"}, {"code": "invalid_type", "path": ["url"], "message": "Required"}], "name": "ZodError"}}
+  get_/payment-links:
+    speakeasy-default-get-/payment-links:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "product": "Small Rubber Table", "active": false, "metadata": {}, "after_completion": {"hosted_confirmation": {"custom_message": "<value>"}}, "currency": "North Korean Won", "livemode": false, "submit_type": "donate", "inactive_message": "<value>", "url": "https://swift-promise.biz", "created": "<value>", "updated": "<value>"}]
+        "404":
+          application/json: {"message": "Not Found"}
+  post_/payment-links:
+    speakeasy-default-post-/payment-links:
+      requestBody:
+        application/json: {"product": "Fantastic Wooden Gloves", "metadata": {}, "after_completion": {"hosted_confirmation": {"custom_message": "<value>"}}, "url": "https://those-affect.com"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "product": "Oriental Concrete Shoes", "active": false, "metadata": {}, "after_completion": {"hosted_confirmation": {"custom_message": "<value>"}}, "currency": "Sri Lanka Rupee", "livemode": true, "submit_type": "pay", "inactive_message": "<value>", "url": "https://runny-lamp.name", "created": "<value>", "updated": "<value>"}
+        "422":
+          application/json: {"success": false, "error": {"issues": [{"code": "invalid_type", "path": ["product"], "message": "Required"}, {"code": "invalid_type", "path": ["metadata"], "message": "Required"}, {"code": "invalid_type", "path": ["after_completion"], "message": "Required"}, {"code": "invalid_type", "path": ["url"], "message": "Required"}], "name": "ZodError"}}
+  get_/prices:
+    speakeasy-default-get-/prices:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "user": "Abagail_Hoppe", "business": "<value>", "product": "Sleek Bronze Chicken", "object": "<value>", "active": false, "created": "<value>", "currency": "South Sudanese pound", "livemode": false, "nickname": "<value>", "unit_amount": 549883, "unit_amount_decimal": "<value>"}, {"id": "<id>", "user": "Betty97", "business": "<value>", "product": "Incredible Fresh Keyboard", "object": "<value>", "active": true, "created": "<value>", "currency": "Cordoba Oro", "livemode": true, "nickname": "<value>", "unit_amount": 272593, "unit_amount_decimal": "<value>"}]
+        "404":
+          application/json: {"message": "Not Found"}
+  post_/prices:
+    speakeasy-default-post-/prices:
+      requestBody:
+        application/json: {"product": "Practical Granite Hat"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "user": "Demario_Sanford", "business": "<value>", "product": "Awesome Bronze Pants", "object": "<value>", "active": true, "created": "<value>", "currency": "Sri Lanka Rupee", "livemode": true, "nickname": "<value>", "unit_amount": 619236, "unit_amount_decimal": "<value>"}
+        "422":
+          application/json: {"success": false, "error": {"issues": [{"code": "invalid_type", "path": ["product"], "message": "Required"}], "name": "ZodError"}}
+  get_/products:
+    speakeasy-default-get-/products:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "active": true, "default_price": "<value>", "description": "reclassify chase when phew clamp", "images": ["<value>", "<value>"], "metadata": {}, "livemode": false, "name": "<value>", "created": "<value>", "updated": "<value>", "url": "https://reckless-typewriter.biz/"}]
+        "404":
+          application/json: {"message": "Not Found"}
+  post_/products:
+    speakeasy-default-post-/products:
+      requestBody:
+        application/json: {"images": ["<value>"], "metadata": {}, "name": "<value>", "url": "https://troubled-help.biz"}
+      responses:
+        "200":
+          application/json: {"id": "<id>", "active": false, "default_price": "<value>", "description": "without now printer rot hopelessly account", "images": ["<value>"], "metadata": {}, "livemode": false, "name": "<value>", "created": "<value>", "updated": "<value>", "url": "https://mediocre-hose.info"}
+        "422":
+          application/json: {"success": false, "error": {"issues": [{"code": "invalid_type", "path": ["images"], "message": "Required"}, {"code": "invalid_type", "path": ["metadata"], "message": "Required"}, {"code": "invalid_type", "path": ["name"], "message": "Required"}, {"code": "invalid_type", "path": ["url"], "message": "Required"}], "name": "ZodError"}}
+  get_/transactions:
+    speakeasy-default-get-/transactions:
+      responses:
+        "200":
+          application/json: [{"id": "<id>", "business": "<value>", "user": "Willis91", "customer": "<value>", "object": "<value>", "amount": "582.58", "phone_number": "602.527.2165", "created": "<value>", "currency": "Cayman Islands Dollar", "description": "kookily fooey ew yahoo armoire", "mpesa_checkout_request_id": "<id>", "mpesa_merchant_request_id": "<id>", "mpesa_results": {"result_code": 5510.36, "result_desc": "<value>", "transaction_amount": 7099.37, "transaction_date": "<value>", "transaction_phone_number": "<value>", "receipt_number": "<value>"}, "status": "completed", "type": "payment", "updated": "<value>"}]
+examplesVersion: 1.0.0
+generatedTests: {}

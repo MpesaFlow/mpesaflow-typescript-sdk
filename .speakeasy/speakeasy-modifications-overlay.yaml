@@ -1,0 +1,129 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.2
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/payment-links"]["post"]
+    update:
+      x-speakeasy-group: paymentLinks
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.paymentLinks.create()
+      before: sdk.payment-links.post_/payment-links()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/files"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.files.list()
+      before: sdk.files.get_/files()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/transactions"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.transactions.list()
+      before: sdk.transactions.get_/transactions()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/prices"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.prices.list()
+      before: sdk.prices.get_/prices()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/products"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.products.create()
+      before: sdk.products.post_/products()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/customers"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.customers.create()
+      before: sdk.customers.post_/customers()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/files"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.files.create()
+      before: sdk.files.post_/files()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/prices"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.prices.create()
+      before: sdk.prices.post_/prices()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/payment-links"]["get"]
+    update:
+      x-speakeasy-group: paymentLinks
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.paymentLinks.list()
+      before: sdk.payment-links.get_/payment-links()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/businesses"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.businesses.create()
+      before: sdk.businesses.post_/businesses()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/products"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.products.list()
+      before: sdk.products.get_/products()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/businesses"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.businesses.list()
+      before: sdk.businesses.get_/businesses()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
+  - target: $["paths"]["/customers"]["get"]
+    update:
+      x-speakeasy-name-override: list
+    x-speakeasy-metadata:
+      after: sdk.customers.list()
+      before: sdk.customers.get_/customers()
+      created_at: 1738350884261
+      reviewed_at: 1738350897292
+      type: method-name
